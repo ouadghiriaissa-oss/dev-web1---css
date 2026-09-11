@@ -1,0 +1,57 @@
+
+
+<style>
+.mon-bouton{
+
+    /* 1. Texte et police */
+    color: white; /* Définit la couleur du texte */
+    font-family: 'Poppins', sans-serif; /* Définit la police du texte */
+    font-size: 16px; /* Définit la taille du texte */
+    font-weight: bold; /* Met le texte en gras */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    letter-spacing: 1px; /* Ajoute un espace entre les lettres */
+
+
+    /* 2. Arrière-plan et dégradé */
+    background-color: blue; /* Définit une couleur de fond */
+    background: linear-gradient(90deg, blue, purple); /* Crée un dégradé de couleurs */
+
+
+    /* 3. Dimensions et espaces */
+    padding: 12px 24px; /* Ajoute un espace intérieur au bouton */
+    margin: 10px; /* Ajoute un espace extérieur autour du bouton */
+
+
+    /* 4. Coins et bordures */
+    border-radius: 15px; /* Arrondit les coins du bouton */
+    border: 2px solid white; /* Ajoute une bordure blanche de 2px */
+    outline: none; /* Supprime le contour du bouton */
+
+
+    /* 5. Effets et ombres */
+    box-shadow: 0 5px 15px gray; /* Ajoute une ombre autour du bouton */
+    opacity: 1; /* Définit le niveau de transparence */
+    cursor: pointer; /* Transforme le curseur en forme de main */
+    transition: all 0.5s ease; /* Rend les changements plus fluides */
+}
+
+
+/* 6. Effets au survol de la souris (Hover) */
+.mon-bouton:hover {
+
+    transform: scale(1.2,1); /* Agrandit légèrement le bouton */
+    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Modifie l'ombre du bouton */
+    
+    background: linear-gradient(90deg, purple, blue); /* Change le dégradé du bouton */
+}
+body {
+
+/*button center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+</style>
+<button class="mon-bouton">bouton</button>
